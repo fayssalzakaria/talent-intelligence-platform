@@ -86,8 +86,9 @@ Détails : [docs/architecture.md](docs/architecture.md).
 | Accord du score avec le jugement d'un recruteur | **AUC 0,895**, soit environ 9 paires sur 10 bien ordonnées (31 avis) |
 | Modèle d'apprentissage concurrent | AUC 0,859 : **ne fait pas mieux**, le score explicable est conservé |
 | Stabilité du clustering (ARI) | **0,66** en local, 0,61 sur le Cloud |
+| Choix du modèle d'embeddings | 3 modèles open source comparés : **Qwen3** retenu sur GPU (AUC 0,95 sur les paires de compétences), **e5-small** sur CPU (100× plus rapide sans GPU) |
 | Coût d'une question à l'assistant | **≈ 0,01 à 0,02 $** |
-| Tests automatisés (édition locale) | **91** : unitaires, intégration PostgreSQL et interface |
+| Tests automatisés (édition locale) | **92** : unitaires, intégration PostgreSQL et interface |
 
 Méthode et limites : [docs/evaluation.md](docs/evaluation.md).
 
